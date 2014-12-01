@@ -1,0 +1,47 @@
+<%#This view is the homepage and shows the title of the site
+TODO It also displays the latest movies (Yeah right!)
+Lastly it provides the user with the opportunity to search%>
+<style> body {
+  background: url("http://www.retrontario.com/wp-content/uploads/2014/01/2012127-The-Video-Station-Girl.jpg");
+  background-size: cover;
+  background-position: center;
+  color: Red;
+  font-family: garamond;
+}
+h1 {
+	font-size: 30px;
+	color: Red;
+	font-family: garamond;
+}
+ul {
+  padding: 0px 0px 0px 0px;
+  background: black;
+}
+form {
+  text-align: right;
+  font-size: 20px;
+  color: black;
+  font-family: garamond;
+}
+input {
+     border: 0;
+     padding: 10px;
+     font-size: 15px;
+   }
+   input[type="button"] {
+     background: red;
+     color: white;
+   }
+</style>
+<center>
+<p></p>
+<ul>
+<h1>THE PODUNK MOVIE DATABASE:   your favorite alternative to IMDB.</h1>
+</ul>
+</center>
+<p></p>
+<p></p>
+<form action="/search?" method="get">
+	<input type="text" name="query" placeholders="Search..." required>
+	<input type="button" value="Check it!">
+</form>

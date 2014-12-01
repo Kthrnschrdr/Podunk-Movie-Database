@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<head>
+<link href="/normalize.css" rel="stylesheet">
+<style>
+header {
+  text-align: center;
+  background: url("http://2.bp.blogspot.com/-MA_v3zihs24/Twizeku8HKI/AAAAAAAABQk/gh7lnoD8vUo/s1600/VHS%2BCassettes.jpg");
+  background-size: cover;
+  color: red;
+}
+a {
+  color:red;
+}
+h1 {
+  font-size: 45px;
+}
+img {
+  margin: 40px 0px 0px 0px;
+  border: 7px solid white;
+  border-radius: 20px;
+}
+ul {
+  padding: 10px 10px 10px 10px;
+  background: black;
+}
+li {
+  display: inline;
+  font-size: 20px;
+  padding: 30px 40px 30px 40px;
+}
+</style>
+</head>
+<body>
+  <header>
+    <img src="http://www.portlandmercury.com/binary/15e6/1398360341-movie_madness.jpg">
+    <h1>Search Results:</h1>
+	</header>
+   
+    <ul>
+	 <% @results.each do |m| %>
+
+	 <li><a href="/movie/<%= m.id %>"><%= m.title %></a></li>
+	 <% end %>
+    </ul>
+</body>

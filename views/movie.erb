@@ -1,0 +1,70 @@
+<style> 
+body {
+  background: url("http://anencounter.files.wordpress.com/2010/10/556771599_0ef12dbebe_o4.jpg");
+  background-size: cover;
+  background-position: center;
+  color: red;
+  font-family: Garamond;
+}
+
+header {
+  font-size: 40px;
+  text-align: left;
+  color: red;
+}
+
+img {
+  margin: 40px 0px 0px 0px;
+  border: 7px solid white;
+  border-radius: 20px;
+}
+
+h1 {
+	font-size: 20px;
+	text-align: left;
+	color: red;
+	font-family: Arial;
+}
+
+h2 {
+	font-size: 17px;
+	text-align: center;
+	color: red;
+	font-family: Garamond;
+}
+
+p {
+	font-size: 15px;
+	color: black;
+	font-family: Garamond;
+}
+</style>
+
+<center>
+<ul>
+<header>
+<img src="http://image.tmdb.org/t/p/w154/
+<%= @movie.poster_path%>"</img>
+<p></p>
+<p></p>
+<p></p>
+<%= @movie.title %></header>
+<p></p>
+<h1><%= @movie.release_date%>
+<p></p>
+<%= @movie.tagline %></h1>
+<ul>
+<h2> Overview: </h2>
+<p><%= @movie.overview %></p>
+</ul>
+</center>
+
+
+<% @trailers.each do |t| %>
+<tr>
+<td><a href="http://www.youtube.com/watch?v=><%= m.trailers(t)%>"</img></a></td>
+<% end %>
+
+
+
+
